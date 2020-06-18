@@ -9,6 +9,7 @@ def blog_index(request):
     }
     return render(request, 'blog_index.html',context)
 
+#blog-category
 def blog_category(request, category):
     posts = Post.objects.filter(
         category_name_contains = category
